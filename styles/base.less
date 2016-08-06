@@ -97,7 +97,7 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .storage {
-  color: @purple;
+  color: @softblue;
 }
 
 .constant {
@@ -117,6 +117,66 @@ atom-text-editor .search-results .marker.current-result .region,
 
   &.other.symbol {
     color: @green;
+  }
+}
+
+.function-call,
+.method {
+  .variable.parameter,
+  .js.variable.readwrite {
+    color: @very-light-gray;
+  }
+}
+
+.embedded .source.ruby {
+  color: @very-light-gray;
+}
+
+.js {
+  .function.console {
+    color: @very-light-gray;
+  }
+
+  .delimiter.comma {
+    color: @very-light-gray;
+  }
+
+  .jsx.tag {
+    color: rgba(@red, 0.6);
+  }
+
+  .jsx.entity.attribute-name {
+    font-style: normal !important;
+  }
+
+  .jsx.component {
+    color: @red;
+  }
+
+  .entity.name.function {
+    color: @very-light-gray;
+  }
+
+  .entity.name.function.method {
+    color: @blue;
+  }
+
+  .variable {
+    color: @very-light-gray;
+  }
+
+  .variable.this {
+    color: @red;
+  }
+
+  .variable.constant {
+    color: @red;
+  }
+
+  .curly,
+  .round,
+  .square {
+    color: @very-light-gray;
   }
 }
 
